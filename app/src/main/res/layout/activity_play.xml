@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_play"
+    tools:context="id.co.imastudio.mengenalwarna.PlayActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_margin="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/btnPlayRestart"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/notif_finish_restart" />
+
+            <ImageView
+                android:id="@+id/btnPlayAuto"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_alignTop="@+id/btnPlayRestart"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible"
+                app:srcCompat="@drawable/button_auto" />
+
+            <ImageView
+                android:id="@+id/btnPlayHome"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignLeft="@+id/btnPlayBack"
+                android:layout_alignStart="@+id/btnPlayBack"
+                android:layout_alignTop="@+id/btnPlayAuto"
+                app:srcCompat="@drawable/notif_finish_home" />
+
+            <ImageView
+                android:id="@+id/btnPlayBack"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                app:srcCompat="@drawable/btn_back" />
+
+            <ImageView
+                android:id="@+id/btnPlayNext"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                app:srcCompat="@drawable/menu_btn_play" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

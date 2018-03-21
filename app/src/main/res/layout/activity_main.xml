@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    tools:context="id.co.imastudio.mengenalwarna.MainActivity">
+
+    <ImageView
+        android:id="@+id/btnOption"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/menu_btn_option" />
+
+    <ImageView
+        android:id="@+id/btnPlay"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnOption"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        app:srcCompat="@drawable/menu_btn_play" />
+
+    <ImageView
+        android:id="@+id/iv_title"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        app:srcCompat="@drawable/bg_main_title" />
+</RelativeLayout>

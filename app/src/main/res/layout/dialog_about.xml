@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="500dp"
+    android:layout_height="300dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/option"
+        android:gravity="center_vertical|center"
+        android:orientation="horizontal">
+
+        <TextView
+            fontPath="fonts/cartoonist_kooky.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="This app made by idn Superkidz"
+            android:textAlignment="center"
+            android:textColor="#ffab02"
+            android:textSize="24sp"
+            tools:ignore="MissingPrefix" />
+    </LinearLayout>
+</LinearLayout>
