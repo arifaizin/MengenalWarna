@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         initView();
+        MediaPlayer player = MediaPlayer.create(MainActivity.this, R.raw.warnabalon);
+        player.start();
 
         YoYo.with(Techniques.Bounce)
                 .duration(3000)
